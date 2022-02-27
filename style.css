@@ -31,6 +31,7 @@ body {
     display: flex;
     align-self: center;
     padding-left: 1rem;
+
     animation-duration: 1s;
     animation-name: slidein;
     
@@ -47,8 +48,7 @@ body {
       width: 100%;
     }
   }
-
-
+  
 .home a{
     font-size: 2rem;
     text-decoration: none;
