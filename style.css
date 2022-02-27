@@ -31,9 +31,23 @@ body {
     display: flex;
     align-self: center;
     padding-left: 1rem;
-    
+    animation-duration: 1s;
+    animation-name: slidein;
     
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 
 .home a{
     font-size: 2rem;
@@ -60,17 +74,25 @@ body {
 }
 
 .list-nav li a:hover{
-    color: #ffd600;
+    
+    transform: scale(1.1);
+    background-color: #3b11f7;
+    border-radius: 10px;
+
 }
 
 
 
 .list-nav li a {
     width: 100%;
+    height: 100%;
+    padding:10px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: white; 
     font-weight: 600;  
+    text-transform: uppercase;
+    transition: all 300ms ease;
 }
 
 .list-nav{
@@ -79,6 +101,11 @@ body {
      justify-content: space-around;
      list-style: none;    
      padding: auto; 
+}
+
+.list-nav u{
+    width: 100%;
+    height: 100%;
 }
 
 .contenedor{
@@ -623,8 +650,10 @@ body {
         flex-direction: column;
         justify-items: center;
         align-items: center;
-
     }
+
+    
+
     .home{
         justify-content: center;
     }
