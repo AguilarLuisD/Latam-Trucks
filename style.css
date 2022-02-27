@@ -1,0 +1,662 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+
+.contenedor-nav {
+    display: grid;
+    grid-template-columns: 1, auto;
+    grid-template-rows: 3rem 2rem;
+    width: 100%;
+    background-color:rgb(10, 53, 88);
+    position: fixed;
+    
+ }
+
+.home {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-self: center;
+    padding-left: 1rem;
+    
+    
+}
+
+.home a{
+    font-size: 2rem;
+    text-decoration: none;
+    color:#ffd600;
+    font-weight: 600;        
+}
+
+.home span {
+    font-size: 2rem;
+    color: white;
+}
+
+.list {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0px;
+    
+}
+
+.list-nav li a:hover{
+    color: #ffd600;
+}
+
+
+
+.list-nav li a {
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white; 
+    font-weight: 600;  
+}
+
+.list-nav{
+    width: 100%;
+     display: flex;
+     justify-content: space-around;
+     list-style: none;    
+     padding: auto; 
+}
+
+.contenedor{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+}
+ 
+
+.contenedor-etiquetas{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+.etiqueta1 {
+    grid-column: 1/2;
+    /* grid-row: 1/2; */
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 146 246);  
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;   
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.etiqueta1 div h2 {
+     text-align: center;
+     padding-bottom: 10px;
+ }
+
+ .etiqueta1 div{
+     padding: 10px;
+ }
+
+
+.etiqueta2 {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 146 246);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;  
+}
+
+.etiqueta2 div h2{
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.etiqueta3 {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 146 246);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+}
+
+.etiqueta3 div h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contenedor-galeria {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+.img1 {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;   
+}
+
+.img1 .boton {
+    background: #ffd600 ;
+    display: block;
+    font-size: 1rem;
+    width: 30%;
+    text-align: center;
+    border: none;
+    border-radius: 100px;
+}
+
+
+.etiqueta1 p {
+    padding: 0px 30px 0px 30px;
+}
+
+.etiqueta2 p {
+    padding: 0px 30px 0px 30px;
+}
+.etiqueta3 p {
+    padding: 0px 30px 0px 30px;
+ }
+
+
+ footer{
+     display: grid;
+     grid-template-rows: 3rem 1rem;
+     width: 90%;
+     bottom: 0;
+     padding-left: 5%;
+     padding-right: 5%;
+     margin-top: auto;
+     
+     
+     }
+
+ footer ul{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     list-style: none;
+     
+     
+ }
+ 
+ .video{ 
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;  
+    margin-bottom: 2rem; 
+ }
+ 
+ #videoframe {
+     position: absolute;
+     width: 90%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     padding-left: 5%;
+     padding-right: 5%;
+        
+ }
+ 
+/* VEHICULOS */
+
+.sec_1{
+    padding-top: 80px;
+}
+
+.quester {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+
+.subtitulo_1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:rgb(0, 84, 246) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+
+}
+
+.subtitulo_1 h2{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    
+      
+    
+}
+
+
+.contenidoQuester{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0 146 246);
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+.contenidoQuester h3{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.contenidoQuester p {
+    color: white;
+
+}
+
+.imagenQuester{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+}
+
+/* SERVICIOS */
+
+.servicio{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-row: repeat(6, auto);
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    gap: 1rem;
+}
+
+.serv{
+    padding-top: 80px;
+}
+
+.subtitulo_rep {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color:  rgb(0, 84, 246);
+    padding: 10px;
+    width: auto;
+}
+.subtitulo_rep h3{
+    font-size: 30px;
+    color: white;
+}
+
+.subtitulo_asist h3{
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+.repuestos_b{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 10px;
+    background-color: white;
+    
+}
+.repuestos_b h3{
+    padding-bottom: 10px;
+}
+
+.repuestos_b ul li{
+    list-style: none;
+
+} 
+
+
+.img_repuestos{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    align-items: center;
+
+}
+
+.subtitulo_asist{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-color:  rgb(0, 84, 246);
+    padding: 10px;
+    width: auto;
+}
+.contenido_asist{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 10px;
+    background-color: white;
+}
+
+.img_asist{
+    grid-column: 2/3;
+    grid-row: 3/5;
+    display: flex;
+    align-items: center;
+}
+
+/* COTIZAR */
+
+
+.cotizar {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(5, auto);
+    width: 90%;
+    margin: auto;
+    margin-top:100px;
+}
+
+
+
+.img_cot {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.subtitulo_cot{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 20px;
+    background-color: rgb(0, 84, 246);
+
+}
+
+.subtitulo_cot h1{
+    font-size: 30px;
+    color: white;
+}
+
+.subtitulo_cot_2{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 10px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.subtitulo_cot_2 h3{
+    font-size: 20px;
+}
+
+.conte_sub2{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(0 146 246);
+
+}
+
+.conte_sub2 p{
+    font-size: 20px;
+    color: white;
+}
+
+.formulario_cot{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_cot input{
+    float:right;
+    width: 200px;
+    
+
+}
+.formulario_cot label{
+
+    font-size:20px;
+    
+}
+
+
+/* UBICANOS */
+ .ubicacion{
+     width: 90%;
+     padding-top: 100px;
+     margin: auto;
+     
+ }
+
+ .contenido_pg{
+     padding: 20px;
+     background-color: rgb(0, 84, 246);
+ }
+ .contenido_pg h1{
+     font-size: 30px;
+     color: white;
+     width: 100%;
+ }
+ .pais{
+     padding: 20px;
+     width: auto;
+     background-color: aqua;
+ }
+ .pais label{
+     font-size: 20px;
+    
+ }
+
+ .pais select{
+     color: blue;
+     border-radius: 10px;
+    margin-left: 20px;     
+ }
+
+
+
+
+
+
+
+@media screen and (max-width: 920px)  {
+
+    body{
+       background-color: rgb(210, 214, 221);
+    }
+
+    .subtitulo_1{
+        grid-column: 1/3;
+        grid-row: 1/2;  
+        
+    }
+
+    .contenidoQuester{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    .imagenQuester {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .sec_1{
+        padding-top: 70px;
+    }
+
+    /*  servicios */
+
+    .subtitulo_rep{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    
+    }
+    .repuestos_b{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .img_repuestos{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .subtitulo_asist{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+
+    .contenido_asist{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .img_asist{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
+
+    
+}      
+        
+        
+
+@media screen and (max-width: 920px){
+    body{
+        background-color: rgb(210, 214, 221);   
+    }
+
+    .contenedor{
+        margin-top:80px;   
+    }
+
+    .etiqueta1 {
+        grid-column: 1/4;
+        grid-row: 1/2; 
+    }
+    .etiqueta2{
+        grid-row: 2/3;
+        grid-column: 1/4;
+          
+    }
+    .etiqueta3{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .etiqueta1 div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .etiqueta2 div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+    }
+    .etiqueta3 div{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:320px) { 
+    body{
+        background-color: #3E3E3E;
+    }
+
+    .list{
+        height: 7rem;   
+    }
+
+    .list-nav{
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+
+    }
+    .home{
+        justify-content: center;
+    }
+    footer{
+        margin-top: auto;
+    }
+
+    footer span{
+        color: white;
+    }
+
+    .contenedor{
+        padding-top: 90px; 
+    }
+
+    .cotizar{
+        padding-top: 50px;
+    }
+
+    .serv{
+        padding-top: 150px;
+    }
+
+    .sec_1{
+        padding-top: 150px;
+    }
+    
+    .cot{
+        padding-top:30px;
+    }
+
+    .ubicacion{
+        padding-top: 150px;
+    }
+}
